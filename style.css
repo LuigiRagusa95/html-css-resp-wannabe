@@ -72,8 +72,59 @@ img {
     clear: both;
 }
 
-/* Breakpoints */
+/* Breakpoints < 420px */
 @media screen and (max-width: 420px) {
+    /* General Adjustment (No Flex) */
+    body {
+        margin: 0;
+    }
+
+    .row {
+        padding: 1rem;
+        margin: 0 auto;
+        width: calc(100% - 32px);
+    }
+
+    .container.grey {
+        background-color: #eeeeee;
+    }
+
+    h1 {
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+
+    #lezioni .row img {
+        width: 50%;
+        height: auto;
+    }
+
+    #lezioni .row :is(.left, .central, .right),
+    #steps .row :is(.left, .central, .right),
+    #why .row :is(.first, .second, .third) {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        width: calc(100% - 1rem);
+    }
+
+    /* Detail Adjustment */
+    #steps .row img,
+    #why .row img {
+        width: 40%;
+        height: auto;
+    }
+
+    #why .row hr {
+        margin-top: 2rem;
+    }
+
+    #why .row :is(.first, .second, .third) {
+        margin-top: 3rem;
+    }
+}
+
+/* Breakpoints > 421px < 512px */
+@media screen and (min-width: 421px) and (max-width: 512px) {
     /* General Adjustment (No Flex) */
     body {
         margin: 0;
