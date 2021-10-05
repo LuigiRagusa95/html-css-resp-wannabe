@@ -75,6 +75,7 @@ img {
 /* Breakpoints < 420px */
 @media screen and (max-width: 420px) {
     /* General Adjustment (No Flex) */
+
     body {
         margin: 0;
     }
@@ -189,14 +190,14 @@ img {
 
     /* Detail Adjustment */
     #lezioni .row img {
-        width: 50%;
-        height: 200px; /* img bug! fix available only in HTML 🤷‍♂️ */
+        width: 30%;
+        height: auto; /* img bug! fix available only in HTML 🤷‍♂️ */
     }
 
     #lezioni .row :is(.left, .central, .right) {
         padding: 0.5rem;
-        margin-right: 1rem;
-        width: calc(50% - 2rem);
+        margin: 1rem;
+        width: calc(100% - 3rem);
     }
 
     #steps .row img {
